@@ -31,12 +31,6 @@ function main() {
 
         const results = getPalletCount(total, rows, cols, additional);
 
-        /* Reset form fields */
-        productCount.value = '';
-        rowCount.value = '';
-        columnCount.value = '';
-        additionalCount.value= '';
-
         /* Create UI components */
         const resultsContainer = document.createElement('div');
         const resultsHeading = document.createElement('h2');
@@ -60,6 +54,13 @@ function main() {
         resultsList.appendChild(resultsProductRemaining);
         resultsContainer.appendChild(resultsList);
         appContainer.appendChild(resultsContainer);
+
+        /* Reset form fields */
+        productNumber.value = '';
+        productCount.value = '';
+        rowCount.value = '';
+        columnCount.value = '';
+        additionalCount.value= '';
     }
 }
 
