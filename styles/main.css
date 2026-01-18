@@ -37,6 +37,13 @@ li:not(:last-of-type) {
     padding: 1.5rem;
 }
 
+@media screen and (min-width: 500px) {
+    .wrapper {
+        max-width: 400px;
+        margin: 10px auto;
+    }
+}
+
 .results {
     margin-top: 2rem;
 }
