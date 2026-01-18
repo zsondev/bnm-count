@@ -131,3 +131,10 @@ h2 {
 .label {
     font-weight: 400;
 }
+
+.watermark {
+    color: #979797;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+}
