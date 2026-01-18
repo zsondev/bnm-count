@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 16px;
+}
+
+form > * {
+    font: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+}
+
+.wrapper {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    margin: 10px;
+    padding: 1.5rem;
+}
+
+.results {
+    margin-top: 2rem;
+}
+
+/* Form */
+
+.input-group > *, button {
+    display: block;
+}
+
+input, button {
+    border-radius: 7px;
+    color: inherit;
+    width: 100%;
+}
+
+input {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 0.5rem;
+}
+
+button {
+    border: none;
+    padding: 1rem;
+    outline: none;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group > *:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.form-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-warn {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.btn-success {
+    background-color: #f8bf22;
+    border: 1px solid #926400;
+    color: #926400;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #F5B70A;
+}
+
+/* Typography */
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.brand-1 {
+    color: #F5B70A;
+}
+
+.brand-2 {
+    color: #f8bf22;
+}
+
+.label {
+    font-weight: 400;
+}
