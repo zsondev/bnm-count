@@ -1,6 +1,7 @@
 function main() {
     // Get UI components
     const appContainer = document.getElementById('app-container');
+    const productNumber = document.getElementById('product-number');
     const productCount = document.getElementById('product-count-total');
     const rowCount = document.getElementById('products-per-row');
     const columnCount = document.getElementById('row-count');
@@ -46,7 +47,7 @@ function main() {
 
         /* Configure UI components */
         resultsContainer.classList.add('results');
-        resultsHeading.textContent = 'Expected count for this line';
+        resultsHeading.innerHTML = productNumber.value ? `Expected count for <span class=brand-1>${productNumber.value}</span>` : 'Expected count for this line';
         resultsProductsPerPallet.innerHTML = '<span class="label">Boxes per pallet:</span> ' + results.productsPerPallet;
         resultsPalletCount.innerHTML = '<span class="label">Total pallets:</span> ' + results.palletCount;
         resultsProductRemaining.innerHTML = '<span class="label">Remaining boxes:</span> ' + results.productsRemaining;
