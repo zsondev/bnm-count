@@ -57,10 +57,10 @@ function main() {
 
         /* Reset form fields */
         productNumber.value = '';
-        productCount.value = '';
-        rowCount.value = '';
-        columnCount.value = '';
-        additionalCount.value= '';
+        productCount.value = 0;
+        rowCount.value = 0;
+        columnCount.value = 0;
+        additionalCount.value= 0;
     }
 }
 
