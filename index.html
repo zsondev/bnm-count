@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/06923015d8.js" crossorigin="anonymous"></script>
+    <script src="scripts/menu.js" defer></script>
     <script src="scripts/app.js" defer></script>
     <title>GetCount</title>
 </head>
@@ -13,33 +15,41 @@
             <h1><span class="brand-1">Get</span><span class="brand-2">Count</span></h1>
         </header>
         <main>
-            <form>
-                <div class="input-group">
-                    <label for="product-number">Product number</label>
-                    <input type="number" id="product-number">
+            <section class="product-info menu" data-menu="menu">
+                <header class="menu__header">
+                    <h2>Product Details</h2>
+                    <button class="menu__collapse-toggler" data-menu-toggler><i class="fa-solid fa-angle-up"></i></button>
+                </header>
+                <div class="menu__collapse-content" data-menu-content>
+                    <form>
+                        <div class="input-group">
+                            <label for="product-number">Product number</label>
+                            <input type="number" id="product-number">
+                        </div>
+                        <div class="input-group">
+                            <label for="product-count-total">Total number of boxes</label>
+                            <input type="number" id="product-count-total" value=0>
+                        </div>
+                        <h2 class="bold underline">Footprint</h2>
+                        <div class="input-group">
+                            <label for="products-per-row">Boxes per row</label>
+                            <input type="number" id="products-per-row" value=0>
+                        </div>
+                        <div class="input-group">
+                            <label for="row-count">Number of rows</label>
+                            <input type="number" id="row-count" value=0>
+                        </div>
+                        <div class="input-group">
+                            <label for="extra">Additional boxes per pallet</label>
+                            <input type="number" id="extra" value=0>
+                        </div>
+                        <div class="form-controls">
+                            <button type="reset" class="btn btn-warn">Reset</button>
+                            <button type="button" id="get-count" class="btn btn-success">Get Count</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="input-group">
-                    <label for="product-count-total">Total number of boxes</label>
-                    <input type="number" id="product-count-total" value=0>
-                </div>
-                <h2 class="bold">Footprint</h2>
-                <div class="input-group">
-                    <label for="products-per-row">Boxes per row</label>
-                    <input type="number" id="products-per-row" value=0>
-                </div>
-                <div class="input-group">
-                    <label for="row-count">Number of rows</label>
-                    <input type="number" id="row-count" value=0>
-                </div>
-                <div class="input-group">
-                    <label for="extra">Additional boxes per pallet</label>
-                    <input type="number" id="extra" value=0>
-                </div>
-                <div class="form-controls">
-                    <button type="reset" class="btn-warn">Reset</button>
-                    <button type="button" id="get-count" class="btn-success">Get Count</button>
-                </div>
-            </form>
+            </section>
         </main>
     </div>
     <footer>
